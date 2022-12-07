@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<style type="text/css">
+
+        .centralizar-imagem{
+
+            margin: 0 auto;
+        }
+</style>  
+           
+
+       
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper d-flex" >
+    <div class="content d-flex align-items-stretch w-100">
+        <div class="d-flex w-100 con">
+            <div class="d-flex align-items-center w-100">
+            
+                <img class="centralizar-imagem" src="{%static 'libs/adminlte/img/fundo3.png' %}" width="600">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
