@@ -17,32 +17,24 @@
             <a href="#" class="nav-link">-</a>
           </li>
 
-       {% if perms.estoque.add_produto%}
+      
           <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Deposito</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="{% url 'listar_produto' %}" class="dropdown-item">Listar Produtos</a></li>
-              <li><a href="{% url 'cadastrar_produto' %}" class="dropdown-item">Cadastrar Produtos</a></li>
+              <li><a href="" class="dropdown-item">Listar Produtos</a></li>
+              <li><a href="" class="dropdown-item">Cadastrar Produtos</a></li>
   
             </ul>
           </li>
 
-        {%else%}
-
-        <li class="nav-item dropdown">
-          <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link ">Deposito</a>
-         </li>
-
-        {%endif%}
-
           <li class="nav-item dropdown">
             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Requisição</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="{% url 'listar_requisicao' %}" class="dropdown-item">Minhas Requisições</a></li>
-              {% if perms.estoque.atender_requisicao %}
-              <li><a href="{% url 'listar_atender_requisicao' %}" class="dropdown-item">Atender Requisicao</a></li>
-              {% endif %}
-              <li><a href="{% url 'requisicao_saida' %}" class="dropdown-item">Solicitar Material</a></li>
+              <li><a href="" class="dropdown-item">Minhas Requisições</a></li>
+            
+              <li><a href="" class="dropdown-item">Atender Requisicao</a></li>
+           
+              <li><a href="" class="dropdown-item">Solicitar Material</a></li>
 
               <li class="dropdown-divider"></li>
 
@@ -91,12 +83,12 @@
         <!-- Messages Dropdown Menu -->
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
-            <i class="far fa-user"></i>&nbsp; <b> {{ request.user.username }}</b>
+            <i class="far fa-user"></i>&nbsp; <b> </b>
   
           </a>
    
         </li>
-        <form id="logout-form" method="POST" action="{% url 'iam:logout' %}">
+        <form id="logout-form" method="POST" action="{}">
 
         <li class="nav-item dropdown">
           <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"> <i class="fas fa-sign-out-alt"></i></a>
